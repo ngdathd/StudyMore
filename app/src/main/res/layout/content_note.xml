@@ -1,0 +1,50 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/content_post"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/padding_very_large"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/txt_subject">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textVisiblePassword|textNoSuggestions"
+                android:maxLines="1"
+                android:textSize="@dimen/sizeBigText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/margin_very_large"
+            android:hint="@string/description">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_des"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:gravity="top|left"
+                android:maxLines="10"
+                android:minLines="5"
+                android:scrollbars="vertical"
+                android:textSize="@dimen/sizeBigText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+</ScrollView>

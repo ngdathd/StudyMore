@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_find_support"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:alpha="0.2"
+            android:src="@drawable/img_intro_1" />
+
+        <RelativeLayout
+            android:id="@+id/rl_search2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <EditText
+                android:id="@+id/edt_search2"
+                android:layout_width="match_parent"
+                android:layout_height="?actionBarSize"
+                android:layout_toLeftOf="@+id/btn_choose2"
+                android:layout_toStartOf="@+id/btn_choose2"
+                android:hint="Nhập từ khóa"
+                android:inputType="textNoSuggestions"
+                android:maxLines="1"
+                android:textColor="@color/colorTextLight" />
+
+            <ImageButton
+                android:id="@+id/btn_clean2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_margin="@dimen/margin_medium"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/padding_large"
+                android:src="@drawable/ic_clear_grey" />
+
+            <ImageButton
+                android:id="@+id/btn_choose2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_medium"
+                android:layout_toLeftOf="@+id/btn_clean2"
+                android:layout_toStartOf="@+id/btn_clean2"
+                android:background="?android:selectableItemBackground"
+                android:clickable="true"
+                android:padding="@dimen/padding_large"
+                android:src="@drawable/ic_check_grey" />
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rc_post_find_support"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/rl_search2"
+            android:paddingTop="8dp"
+            tools:ignore="RtlSymmetry" />
+
+    </RelativeLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_create_find_support"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@drawable/ic_edit_white" />
+
+</android.support.design.widget.CoordinatorLayout>

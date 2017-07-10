@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/item_post"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?android:selectableItemBackground"
+    android:descendantFocusability="blocksDescendants"
+    android:paddingBottom="@dimen/padding_large"
+    android:paddingLeft="@dimen/padding_very_large"
+    android:paddingRight="@dimen/padding_very_large"
+    android:paddingTop="@dimen/padding_medium">
+
+    <RelativeLayout
+        android:id="@+id/rl_user"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/item_post_height">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/img_avatar_item"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_launcher"
+            fresco:roundAsCircle="true" />
+
+        <ToggleButton
+            android:id="@+id/img_bookmark"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/bookmark_selector"
+            android:checked="false"
+            android:contentDescription="@string/app_name"
+            android:textOff=""
+            android:textOn="" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_large"
+            android:layout_marginRight="@dimen/margin_large"
+            android:layout_toEndOf="@id/img_avatar_item"
+            android:layout_toLeftOf="@id/img_bookmark"
+            android:layout_toRightOf="@id/img_avatar_item"
+            android:layout_toStartOf="@id/img_bookmark">
+
+            <LinearLayout
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_small"
+                    android:src="@drawable/ic_person" />
+
+                <TextView
+                    android:id="@+id/txt_username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/app_name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorText"
+                    android:textSize="@dimen/sizeNormalText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/username">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_small"
+                    android:src="@drawable/ic_location_grey" />
+
+                <TextView
+                    android:id="@+id/txt_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/txt_location1"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/sizeTinyText" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/address">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:padding="@dimen/padding_small"
+                    android:src="@drawable/ic_phone_grey" />
+
+                <TextView
+                    android:id="@+id/txt_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:text="@string/txt_phone_number"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                    android:textColor="@color/colorTextLight"
+                    android:textSize="@dimen/sizeTinyText" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_user"
+        android:layout_marginTop="@dimen/padding_small"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_title"
+            android:maxLines="1"
+            android:paddingLeft="@dimen/padding_large"
+            android:paddingRight="@dimen/padding_large"
+            android:text="@string/txt_subject"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sizeNormalText" />
+
+        <TextView
+            android:id="@+id/content_post"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/padding_large"
+            android:layout_marginStart="@dimen/padding_large"
+            android:layout_marginTop="@dimen/margin_small"
+            android:maxLines="5"
+            android:text="@string/large_text"
+            android:textSize="@dimen/sizeNormalText" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_large"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_title"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:paddingLeft="@dimen/padding_very_large"
+            android:paddingRight="@dimen/padding_very_large">
+
+            <ImageView
+                android:id="@+id/img_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_very_large"
+                android:layout_marginRight="@dimen/margin_very_large"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_title_grey" />
+
+            <TextView
+                android:id="@+id/txt_title1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_very_large"
+                android:layout_marginStart="@dimen/margin_very_large"
+                android:layout_toEndOf="@id/img_title"
+                android:layout_toRightOf="@id/img_title"
+                android:hint="@string/txt_subject"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/sizePrimaryText" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginStart="72dp"
+            android:background="@color/colorTextLight" />
+
+        <RelativeLayout
+            android:id="@+id/rl_phone"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:paddingLeft="@dimen/padding_very_large"
+            android:paddingRight="@dimen/padding_very_large">
+
+            <ImageView
+                android:id="@+id/img_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_very_large"
+                android:layout_marginRight="@dimen/margin_very_large"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_phone_grey" />
+
+            <ImageView
+                android:id="@+id/img_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_message_grey" />
+
+            <TextView
+                android:id="@+id/txt_phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_very_large"
+                android:layout_marginLeft="@dimen/margin_very_large"
+                android:layout_marginRight="@dimen/margin_very_large"
+                android:layout_marginStart="@dimen/margin_very_large"
+                android:layout_toEndOf="@id/img_phone"
+                android:layout_toLeftOf="@id/img_message"
+                android:layout_toRightOf="@id/img_phone"
+                android:layout_toStartOf="@id/img_message"
+                android:hint="@string/txt_phone_number"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/sizePrimaryText" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginStart="72dp"
+            android:background="@color/colorTextLight" />
+
+        <RelativeLayout
+            android:id="@+id/rl_location"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:paddingLeft="@dimen/padding_very_large"
+            android:paddingRight="@dimen/padding_very_large">
+
+            <ImageView
+                android:id="@+id/img_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_very_large"
+                android:layout_marginRight="@dimen/margin_very_large"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_location_grey" />
+
+            <ImageView
+                android:id="@+id/img_directions"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_directions_grey" />
+
+            <TextView
+                android:id="@+id/txt_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_very_large"
+                android:layout_marginLeft="@dimen/margin_very_large"
+                android:layout_marginRight="@dimen/margin_very_large"
+                android:layout_marginStart="@dimen/margin_very_large"
+                android:layout_toEndOf="@id/img_location"
+                android:layout_toLeftOf="@id/img_directions"
+                android:layout_toRightOf="@id/img_location"
+                android:layout_toStartOf="@id/img_directions"
+                android:hint="@string/txt_location1"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/sizePrimaryText" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginStart="72dp"
+            android:background="@color/colorTextLight" />
+
+        <RelativeLayout
+            android:id="@+id/rl_fee"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/item_height"
+            android:background="?android:selectableItemBackground"
+            android:clickable="true"
+            android:paddingLeft="@dimen/padding_very_large"
+            android:paddingRight="@dimen/padding_very_large">
+
+            <ImageView
+                android:id="@+id/img_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/margin_very_large"
+                android:layout_marginRight="@dimen/margin_very_large"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/ic_money_grey" />
+
+            <TextView
+                android:id="@+id/txt_fee"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/margin_very_large"
+                android:layout_marginStart="@dimen/margin_very_large"
+                android:layout_toEndOf="@id/img_money"
+                android:layout_toRightOf="@id/img_money"
+                android:hint="@string/fee_form"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                android:textColor="@color/colorText"
+                android:textSize="@dimen/sizePrimaryText" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/txt_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="72dp"
+            android:layout_marginStart="72dp"
+            android:background="@color/colorTextLight" />
+
+        <TextView
+            android:id="@+id/content_post_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_very_large"
+            android:layout_marginLeft="@dimen/padding_very_large"
+            android:layout_marginRight="@dimen/padding_very_large"
+            android:layout_marginTop="@dimen/padding_large"
+            android:background="?android:selectableItemBackground"
+            android:paddingLeft="@dimen/padding_medium"
+            android:paddingRight="@dimen/padding_medium"
+            android:paddingTop="@dimen/padding_large"
+            android:text="@string/large_text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sizePrimaryText" />
+
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>

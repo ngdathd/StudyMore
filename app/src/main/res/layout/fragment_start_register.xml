@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragment_start_register"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="@dimen/padding_very_large">
+
+    <LinearLayout
+        android:id="@+id/ln_form_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="82dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/activity_vertical_margin"
+        android:paddingRight="@dimen/activity_vertical_margin">
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="@string/input_email_register">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_email_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textVisiblePassword|textNoSuggestions"
+                android:maxLines="1"
+                android:textSize="@dimen/sizeNormalText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_very_large"
+            android:hint="@string/input_pass">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_pass_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textSize="@dimen/sizeNormalText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/margin_very_large"
+            android:hint="@string/input_pass1">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/edt_pass_register1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_large"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textSize="@dimen/sizeNormalText" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:text="@string/note_register"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/sizeSecondaryText" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_email_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:background="@drawable/btn_login_background"
+            android:text="@string/register_account"
+            android:textColor="@color/white" />
+
+        <android.support.v7.widget.AppCompatButton
+            android:id="@+id/btn_back_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/padding_very_large"
+            android:background="@drawable/com_facebook_button_background"
+            android:text="@string/backtologin"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <item
+        android:id="@+id/action_today"
+        android:orderInCategory="100"
+        android:title="Hôm nay"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_yesterday"
+        android:orderInCategory="100"
+        android:title="Hôm qua"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_week"
+        android:orderInCategory="100"
+        android:title="Tuần trước"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_all"
+        android:orderInCategory="100"
+        android:title="Tất cả"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/action_search"
+        android:icon="@drawable/ic_search_white"
+        android:orderInCategory="100"
+        app:showAsAction="ifRoom"
+        tools:ignore="MenuTitle" />
+</menu>

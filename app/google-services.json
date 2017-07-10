@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "70778975286",
+    "firebase_url": "https://studymore-500ee.firebaseio.com",
+    "project_id": "studymore-500ee",
+    "storage_bucket": "studymore-500ee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:70778975286:android:164649f18cde9417",
+        "android_client_info": {
+          "package_name": "com.ngdat.studymore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "70778975286-ec3etcac8bh67n9pvieb11fudlj5le7q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ngdat.studymore",
+            "certificate_hash": "ec30d9e0ca107de8ec6093def084294e54195fd5"
+          }
+        },
+        {
+          "client_id": "70778975286-pjm7c7ggsti3hvcb7b24pe7vpsb4srgv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD9gE0uV_7jRCazodcMGbnZ5Np4LUYnDWA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "70778975286-pjm7c7ggsti3hvcb7b24pe7vpsb4srgv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
