@@ -1,6 +1,6 @@
 package com.ngdat.studymore.base;
 
-import android.support.annotation.StringRes;
+import androidx.annotation.StringRes;
 
 public interface IViewMain {
     int getLayout();

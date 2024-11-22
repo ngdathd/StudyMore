@@ -1,11 +1,12 @@
 package com.ngdat.studymore.ui.primary;
 
 import android.content.Context;
-import android.support.design.widget.TabLayout;
-import android.support.v4.view.ViewPager;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 
+import androidx.viewpager.widget.ViewPager;
+
+import com.google.android.material.tabs.TabLayout;
 import com.ngdat.studymore.R;
 import com.ngdat.studymore.adapter.FragmentAdapter;
 import com.ngdat.studymore.base.fragment.BaseFragment;

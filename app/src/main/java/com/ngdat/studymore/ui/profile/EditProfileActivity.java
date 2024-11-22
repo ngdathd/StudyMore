@@ -1,10 +1,11 @@
 package com.ngdat.studymore.ui.profile;
 
-import android.support.design.widget.TextInputEditText;
-import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import androidx.appcompat.widget.Toolbar;
+
+import com.google.android.material.textfield.TextInputEditText;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.ngdat.studymore.R;

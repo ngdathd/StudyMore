@@ -42,7 +42,7 @@
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_message_grey" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="@dimen/margin_very_large"
@@ -55,7 +55,7 @@
                 android:layout_toStartOf="@id/img_message1"
                 android:hint="@string/phone_form">
 
-                <android.support.design.widget.TextInputEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edt_phone_profile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -63,7 +63,7 @@
                     android:maxLines="1"
                     android:textSize="@dimen/sizeBigText" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </RelativeLayout>
 
@@ -87,7 +87,7 @@
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_email_grey" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/margin_very_large"
@@ -96,7 +96,7 @@
                 android:layout_toRightOf="@id/img_email1"
                 android:hint="@string/email">
 
-                <android.support.design.widget.TextInputEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edt_email_profile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -104,7 +104,7 @@
                     android:maxLines="1"
                     android:textSize="@dimen/sizeBigText" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </RelativeLayout>
 
@@ -138,7 +138,7 @@
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_directions_grey" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginEnd="@dimen/margin_very_large"
@@ -151,7 +151,7 @@
                 android:layout_toStartOf="@id/img_directions1"
                 android:hint="@string/txt_location1">
 
-                <android.support.design.widget.TextInputEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edt_local_profile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -159,7 +159,7 @@
                     android:maxLines="1"
                     android:textSize="@dimen/sizeBigText" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </RelativeLayout>
 
@@ -183,7 +183,7 @@
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_cake_grey" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/margin_very_large"
@@ -192,7 +192,7 @@
                 android:layout_toRightOf="@id/img_money"
                 android:hint="@string/txt_birthday">
 
-                <android.support.design.widget.TextInputEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edt_birthday_profile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -200,7 +200,7 @@
                     android:maxLines="1"
                     android:textSize="@dimen/sizeBigText" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </RelativeLayout>
 
@@ -224,7 +224,7 @@
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_gender_grey" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/margin_very_large"
@@ -233,7 +233,7 @@
                 android:layout_toRightOf="@id/img_gender"
                 android:hint="@string/gender">
 
-                <android.support.design.widget.TextInputEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edt_gender_profile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -241,7 +241,7 @@
                     android:maxLines="1"
                     android:textSize="@dimen/sizeBigText" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </RelativeLayout>
 
@@ -265,7 +265,7 @@
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_school_grey" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/margin_very_large"
@@ -274,7 +274,7 @@
                 android:layout_toRightOf="@id/img_education"
                 android:hint="Trình độ học vấn">
 
-                <android.support.design.widget.TextInputEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edt_education_profile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -282,7 +282,7 @@
                     android:maxLines="1"
                     android:textSize="@dimen/sizeBigText" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </RelativeLayout>
 
@@ -306,7 +306,7 @@
                 android:contentDescription="@string/app_name"
                 android:src="@drawable/ic_favorite_grey" />
 
-            <android.support.design.widget.TextInputLayout
+            <com.google.android.material.textfield.TextInputLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="@dimen/margin_very_large"
@@ -315,7 +315,7 @@
                 android:layout_toRightOf="@id/img_favor"
                 android:hint="Sở thích">
 
-                <android.support.design.widget.TextInputEditText
+                <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/edt_favor_profile"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -323,7 +323,7 @@
                     android:maxLines="1"
                     android:textSize="@dimen/sizeBigText" />
 
-            </android.support.design.widget.TextInputLayout>
+            </com.google.android.material.textfield.TextInputLayout>
 
         </RelativeLayout>
 

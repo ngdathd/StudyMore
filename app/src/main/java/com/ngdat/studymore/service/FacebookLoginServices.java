@@ -2,10 +2,11 @@ package com.ngdat.studymore.service;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import android.view.animation.AnimationUtils;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentManager;
 
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;

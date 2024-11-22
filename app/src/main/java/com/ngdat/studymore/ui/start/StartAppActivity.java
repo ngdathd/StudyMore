@@ -2,10 +2,11 @@ package com.ngdat.studymore.ui.start;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.ngdat.studymore.R;
 import com.ngdat.studymore.base.activity.BaseActivity;
