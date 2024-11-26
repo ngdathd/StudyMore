@@ -340,7 +340,9 @@ public class BookmarkFragment extends BaseFragment
         itemPost = dataSnapshot.getValue(ItemPost.class);
         boolean b = mAdapter.remove(itemPost);
         mAdapter.notifyDataSetChanged();
-        Toast.makeText(getContext(), "Đã xóa đánh dấu bài viết", Toast.LENGTH_SHORT).show();
+        if (getContext() != null) {
+            Toast.makeText(getContext(), "Đã xóa đánh dấu bài viết", Toast.LENGTH_SHORT).show();
+        }
         Log.i(TAG, "onChildRemoved: " + mAdapter.getmItemPosts().size() + b);
 //        databaseReference.addChildEventListener(this);
     }

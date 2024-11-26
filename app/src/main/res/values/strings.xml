@@ -46,7 +46,6 @@
     <string name="pass_error">Mật khẩu quá ngắn!</string>
     <string name="msg_login_success">Đăng nhập thành công!</string>
 
-    <string name="facebook_app_id">832057820278229</string>
     <string name="gender">Giới tính</string>
     <string name="description1a">StudyMore giúp bạn</string>
     <string name="description1b">dễ dàng tìm gia sư hơn...</string>
@@ -74,4 +73,7 @@
     <string name="phone_form">Điện thoại liên hệ</string>
     <string name="fee_form">Học phí dự kiến</string>
 
+    <string name="facebook_app_id">1731542087702141</string>
+    <string name="fb_login_protocol_scheme">fb1731542087702141</string>
+    <string name="facebook_client_token">ac6d2856a6dd8eb29b956657e7ca8a88</string>
 </resources>

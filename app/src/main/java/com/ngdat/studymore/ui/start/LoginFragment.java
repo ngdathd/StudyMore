@@ -6,6 +6,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.widget.AppCompatButton;
 import androidx.fragment.app.FragmentManager;
 
@@ -103,17 +104,26 @@ public class LoginFragment extends BaseFragment
                                 @Override
                                 public void onDataChange(DataSnapshot dataSnapshot) {
                                     User user = dataSnapshot.getValue(User.class);
-                                    UserInstance.getInstance().setName(user.getName());
-                                    UserInstance.getInstance().setEmail(user.getEmail());
-                                    UserInstance.getInstance().setUid(user.getUid());
-                                    UserInstance.getInstance().setKey(firebaseUser.getUid());
-                                    LoginManager.getInstance().unregisterCallback(callbackManager);
-                                    isFinishLoadData = true;
-                                    if (isFinishAnimation) {
-                                        startActivity(new Intent(getBaseActivity(), MainActivity.class));
-                                        getActivity().finish();
+                                    if (user != null) {
+                                        UserInstance.getInstance().setName(user.getName());
+                                        UserInstance.getInstance().setEmail(user.getEmail());
+                                        UserInstance.getInstance().setUid(user.getUid());
+                                        UserInstance.getInstance().setKey(firebaseUser.getUid());
+                                        LoginManager.getInstance().unregisterCallback(callbackManager);
+                                        isFinishLoadData = true;
+                                        if (isFinishAnimation) {
+                                            startActivity(new Intent(getBaseActivity(), MainActivity.class));
+                                            getActivity().finish();
+                                        }
+                                    } else {
+                                        isFinishLoadData = true;
+                                        if (isFinishAnimation) {
+                                            LoginManager.getInstance().logOut();
+                                            FirebaseAuth.getInstance().signOut();
+                                            startActivity(new Intent(getBaseActivity(), StartAppActivity.class));
+                                            getActivity().finish();
+                                        }
                                     }
-
                                 }
 
                                 @Override

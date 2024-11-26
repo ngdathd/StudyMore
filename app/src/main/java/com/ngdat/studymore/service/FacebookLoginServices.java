@@ -56,7 +56,7 @@ public class FacebookLoginServices extends BaseFireBase
 
     public void loginAccountFacebook(final Activity activity, CallbackManager callbackManager) {
         LoginManager.getInstance()
-                .logInWithReadPermissions(activity, Arrays.asList("public_profile", "email", "user_birthday"));
+                .logInWithReadPermissions(activity, Arrays.asList("public_profile", "email"));
         LoginManager.getInstance()
                 .registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
                     @Override
