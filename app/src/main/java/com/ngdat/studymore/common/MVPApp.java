@@ -4,6 +4,9 @@ import android.annotation.SuppressLint;
 import android.app.Application;
 import android.content.Context;
 
+import com.facebook.FacebookSdk;
+import com.facebook.appevents.AppEventsLogger;
+
 public class MVPApp extends Application {
     @SuppressLint("StaticFieldLeak")
     private static Context mContextApp;
@@ -11,6 +14,8 @@ public class MVPApp extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
+        FacebookSdk.sdkInitialize(getApplicationContext());
+        AppEventsLogger.activateApp(this);
         mContextApp = this;
     }
 

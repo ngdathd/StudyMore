@@ -2,10 +2,11 @@ package com.ngdat.studymore.service;
 
 import android.app.Activity;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
-import android.support.v4.app.FragmentManager;
 import android.util.Log;
 import android.view.animation.AnimationUtils;
+
+import androidx.annotation.NonNull;
+import androidx.fragment.app.FragmentManager;
 
 import com.facebook.AccessToken;
 import com.facebook.CallbackManager;
@@ -55,7 +56,7 @@ public class FacebookLoginServices extends BaseFireBase
 
     public void loginAccountFacebook(final Activity activity, CallbackManager callbackManager) {
         LoginManager.getInstance()
-                .logInWithReadPermissions(activity, Arrays.asList("public_profile", "email", "user_birthday"));
+                .logInWithReadPermissions(activity, Arrays.asList("public_profile", "email"));
         LoginManager.getInstance()
                 .registerCallback(callbackManager, new FacebookCallback<LoginResult>() {
                     @Override

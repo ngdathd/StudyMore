@@ -1,11 +1,13 @@
 package com.ngdat.studymore.ui.start;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentManager;
 import android.view.View;
 import android.widget.ImageView;
+
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 import com.ngdat.studymore.R;
 import com.ngdat.studymore.base.activity.BaseActivity;
@@ -75,6 +77,7 @@ public class StartAppActivity extends BaseActivity
         fragment.onActivityResult(requestCode, resultCode, data);
     }
 
+    @SuppressLint("MissingSuperCall")
     @Override
     public void onBackPressed() {
         onBackMain();

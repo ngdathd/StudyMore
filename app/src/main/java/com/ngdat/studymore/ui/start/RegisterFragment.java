@@ -1,13 +1,14 @@
 package com.ngdat.studymore.ui.start;
 
-import android.support.design.widget.TextInputEditText;
-import android.support.v4.app.FragmentManager;
-import android.support.v7.app.AlertDialog;
-import android.support.v7.widget.AppCompatButton;
 import android.util.Log;
 import android.view.View;
 import android.widget.Toast;
 
+import androidx.appcompat.app.AlertDialog;
+import androidx.appcompat.widget.AppCompatButton;
+import androidx.fragment.app.FragmentManager;
+
+import com.google.android.material.textfield.TextInputEditText;
 import com.ngdat.studymore.R;
 import com.ngdat.studymore.base.fragment.BaseFragment;
 import com.ngdat.studymore.service.EmailRegisterListener;

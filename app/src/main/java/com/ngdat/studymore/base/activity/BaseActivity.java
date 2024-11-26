@@ -2,10 +2,12 @@ package com.ngdat.studymore.base.activity;
 
 import android.app.ProgressDialog;
 import android.os.Bundle;
-import android.support.annotation.Nullable;
-import android.support.annotation.StringRes;
-import android.support.v7.app.AppCompatActivity;
+
 import android.widget.Toast;
+
+import androidx.annotation.Nullable;
+import androidx.annotation.StringRes;
+import androidx.appcompat.app.AppCompatActivity;
 
 import com.ngdat.studymore.base.IViewMain;
 import com.ngdat.studymore.base.fragment.BaseFragment;
