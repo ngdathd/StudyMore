@@ -16,7 +16,7 @@
 ### Mô tả
 
 - Ứng dụng **StudyMore** là một bài tập lớn của tôi tại Viện CNTT T3H, ngôn ngữ lập trình là `Android - Java`. Tôi code cơ bản và dễ hiểu, phù hợp với ai mới học. Tôi cũng đã cập nhật, bạn chỉ cần tải về và chạy. Bạn có thể dùng **StudyMore** như một tài liệu tham khảo hoặc dùng làm bài tập của mình.
-- Ứng dụng **StudyMore** có các tính năng cơ bản của một mạng xã hội. Người dùng có thể đăng bài, tạo ghi chú, đánh dấu bài viết.
+- Ứng dụng **StudyMore** có các tính năng cơ bản của một mạng xã hội. Người dùng có thể đăng ký, đăng nhập, đăng bài, tạo ghi chú, đánh dấu bài viết.
 - Ứng dụng **StudyMore** sử dụng `Firebase` để làm backend. Bạn có thể dùng luôn dự án `Firebase` của tôi hoặc tạo 1 dự án của riêng mình, chỉ cần chạy **StudyMore** các cấu trúc trong database sẽ tự động được tạo.
 
 ### Chạy thử
