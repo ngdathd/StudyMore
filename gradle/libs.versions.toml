@@ -16,7 +16,6 @@ facebook-android-sdk = { module = "com.facebook.android:facebook-android-sdk", v
 firebase-auth = { module = "com.google.firebase:firebase-auth" }
 firebase-bom = { module = "com.google.firebase:firebase-bom", version.ref = "firebaseBom" }
 firebase-database = { module = "com.google.firebase:firebase-database" }
-firebase-storage = { module = "com.google.firebase:firebase-storage" }
 fresco = { module = "com.facebook.fresco:fresco", version.ref = "fresco" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 ext-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
